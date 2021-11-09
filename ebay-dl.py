@@ -57,7 +57,6 @@ if __name__ == '__main__':
     # get command line arguments
     parser = argparse.ArgumentParser(description='Download information from ebay and convert to JSON.')
     parser.add_argument('search_term') #arguments need to have quotations to include spaces
-    parser.add_argument('--csv', action='store_true')
     parser.add_argument('--num_pages', default=10)
     args = parser.parse_args()
     print('args.search_term=', args.search_term)
